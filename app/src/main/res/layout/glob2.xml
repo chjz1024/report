@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:weightSum="1" android:orientation="vertical"
+              android:background="@android:color/transparent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="@android:color/background_light"
+            android:layout_marginBottom="1dp">
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/icon_cheliang" android:id="@+id/cheliang"
+                android:layout_weight=".1" android:paddingLeft="10dp" android:paddingRight="10dp"/>
+        <TextView
+                android:text="违法车辆"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_weight="0.25"
+                android:textColor="@android:color/background_dark"/>
+        <Spinner
+                android:layout_width="0dp"
+                android:layout_height="46dp" android:id="@+id/spinner" android:layout_weight="0.1"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="请输入车牌号"
+                android:ems="10"
+                android:id="@+id/editText6" android:layout_weight="0.55"
+                android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="@android:color/background_light"
+            android:layout_marginBottom="1dp">
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/icon_chepai" android:id="@+id/chepai"
+                android:layout_weight=".1" android:paddingLeft="10dp" android:paddingRight="10dp"/>
+        <TextView
+                android:text="车牌类型"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_weight="0.25"
+                android:textColor="@android:color/background_dark"/>
+        <Button
+                android:text="蓝底白字"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/button" android:layout_weight="0.3"
+                android:textColor="@color/colorPrimaryDark"/>
+        <Button
+                android:text="黄底黑字"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="0.30"
+                android:layout_marginLeft="20dp" android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center_vertical" android:onClick="selectDate"
+            android:background="@android:color/background_light">
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/icon_shijian" android:id="@+id/shijian"
+                android:layout_weight=".1" android:paddingLeft="10dp" android:paddingRight="10dp"/>
+        <TextView
+                android:text="违法时间"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_weight="0.25"
+                android:textColor="@android:color/background_dark"/>
+        <TextView
+                android:text="2018-3-3  >  "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="0.65"
+                android:textAlignment="viewEnd"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:weightSum="1" android:onClick="selectPosition"
+              android:background="@android:color/background_light">
+
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="28dp" app:srcCompat="@drawable/jtb_icn_place" android:id="@+id/jtb"
+            android:layout_weight="0.075" android:adjustViewBounds="true"
+            android:padding="7dp"/>
+    <TextView
+            android:text="违法位置"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight=".175"
+            android:textSize="15sp" android:paddingTop="3dp"/>
+    <TextView
+            android:text="新疆xxxxxx                                                >"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight=".75"
+            android:paddingLeft="30dp"/>
+</LinearLayout>
